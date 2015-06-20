@@ -1,0 +1,15 @@
+{
+  "name": "ref-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "decode.bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fosify-url": "^0.1.0",
+    "kibe": "0.0.2"
+  }
+}
