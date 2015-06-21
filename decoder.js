@@ -6,8 +6,10 @@
       throw new Error('dict is required');
     }
     
-    return function(textCode) {
-      return dict[textCode];
+    return function(bundleName) {
+      return function(textCode) {
+        return dict[bundleName][textCode];
+      }
     }
   }
   

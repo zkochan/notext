@@ -1,4 +1,4 @@
-var r = require('../index');
+var t = require('../index')('example');
 
-console.log(r(1));
-console.info(r(2));
+console.log(t(1));
+console.info(t(2));

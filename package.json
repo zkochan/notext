@@ -1,6 +1,6 @@
 {
   "name": "notext",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A JavaScript library that allows to insert a reference instead of a log text.",
   "main": "index.js",
   "scripts": {

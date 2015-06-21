@@ -1,19 +1,21 @@
 (function() {
   'use strict';
 
-  var r;
+  var notext;
   
-  if (window.r) {
-    r = window.r;
+  if (window.notext) {
+    notext = window.notext;
   } else {
-    r = function(textCode) {
-      return '::' + textCode.toString() + '::';
-    }
+    notext = function(bundleName) {
+      return function(textCode) {
+        return '::' + bundleName + '.' textCode.toString() + '::';
+      }
+    };
   }
   
   if (typeof module === 'object' && typeof module.exports === 'object') {
-    module.exports = r;
+    module.exports = notext;
   } else {
-    window.r = r;
+    window.notext = notext;
   }
 })();
